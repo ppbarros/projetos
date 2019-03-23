@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bem-Vindo</title>
+</head>
+<body>
+<table border="2">
+    <tr>
+        <td>Projeto</td>
+        <td>Data Final</td>
+        <td>Gerente</td>
+    </tr>
+    {% for c in projetos %}
+    <tr>
+        <td><a href="/projetos/{{c[0]}}" style="color:black;">{{c[0]}}</a></td>
+        <td>{{c[1]}}</td>
+        <td>{{c[2]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

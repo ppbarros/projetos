@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhe Projeto</title>
+</head>
+<body>
+<h1>Detalhe do {{projeto}}</h1>
+<table border="3" cellpadding="10">
+    <caption><h2>Atividades</h2></caption>
+    <tr>
+    {% for c in atividades %}
+        <td align="center"><a href="/atividade/{{c}}" style="color:black;">{{c}}</a></td>
+        {% endfor %}
+    </tr>
+
+</table>
+</body>
+</html>
